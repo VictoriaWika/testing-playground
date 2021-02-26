@@ -27,10 +27,10 @@ describe('lib/string', () => {
       expect(result).toStrictEqual(['Anna', 'John', 'Lu', 'Victoria'])
     })
 
-    // it('contains each string only ones in the resulting array', () => {
-    //     const result = commaSeparatedToArray('car, bus, car, bike, bike')
-    //     expect(result).toBe(['bike', 'bus', 'car'])
-    //   })
+    it('contains each string only ones in the resulting array', () => {
+      const result = commaSeparatedToArray('car, bus, car, bike, bike')
+      expect(result).toStrictEqual(['Bike', 'Bus', 'Car'])
+    })
 
     it('returns all items in titel case ("john" -> "John")', () => {
       const result = commaSeparatedToArray('john, jane, joe')
